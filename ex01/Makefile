@@ -6,17 +6,17 @@
 #    By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/08 14:15:26 by fzayani           #+#    #+#              #
-#    Updated: 2025/03/08 16:05:50 by fzayani          ###   ########.fr        #
+#    Updated: 2025/03/08 18:37:38 by fzayani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Beaureaucrat
+NAME = Form
 
 CC = c++
 
 CFLAG = -Wall -Wextra -Wextra -std=c++98
 
-SRC = main.cpp Bureaucrat.cpp
+SRC = main.cpp Bureaucrat.cpp Form.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 14:16:01 by fzayani           #+#    #+#             */
-/*   Updated: 2025/03/08 15:20:50 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/03/08 18:23:15 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <string>
 #include <exception>
 #include <iostream>
+#include "Form.hpp"
 
 class Bureaucrat {
 
@@ -35,6 +36,8 @@ class Bureaucrat {
 		void incrementGrade();
 		void decrementGrade();
 
+		void signForm(Form& form);
+
 		//class d'execption
 		class GradeTooHighException : public std::exception{
 			public :
@@ -47,7 +50,7 @@ class Bureaucrat {
 		};
 };
 
-//Operateur de surcharge 
+//Operateur de surcharge
 std::ostream& operator<<(std::ostream& os, const Bureaucrat& bureaucrat);
 
 #endif
