@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 14:15:58 by fzayani           #+#    #+#             */
-/*   Updated: 2025/03/08 18:29:40 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/03/10 13:31:57 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,11 @@ int main() {
 		// Test des bureaucrates
 		Bureaucrat highGrade("John", 5);
 		Bureaucrat lowGrade("Bob", 100);
+		Bureaucrat midleGrade("Luc", 80);
 
 		std::cout << highGrade << std::endl;
 		std::cout << lowGrade << std::endl;
+		std::cout << midleGrade << std::endl;
 
 		// Test des formulaires
 		Form easyForm("Simple Form", 90, 100);
@@ -34,8 +36,12 @@ int main() {
 		highGrade.signForm(easyForm);
 		highGrade.signForm(hardForm);
 
+
 		lowGrade.signForm(easyForm);
 		lowGrade.signForm(hardForm);
+
+		midleGrade.signForm(easyForm);
+		midleGrade.signForm(hardForm);
 
 		// Vérification après signature
 		std::cout << "After signing attempts:" << std::endl;
